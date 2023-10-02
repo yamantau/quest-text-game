@@ -1,3 +1,5 @@
+package entity;
+
 import org.junit.jupiter.api.Test;
 import ru.javarush.bilalov.quest.entity.Variant;
 
