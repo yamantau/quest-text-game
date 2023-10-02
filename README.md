@@ -19,6 +19,9 @@
 ## Usage
 
 - Вам потребуется Tomcat 9 и соответсвующие ему импорты HttpServlets
+- Tomcat Configure: 
+  - URL: http://localhost:8080/start
+  - Application context: /
 
 ## Tests
 
