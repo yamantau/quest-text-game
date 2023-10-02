@@ -7,7 +7,6 @@
 - [Tests](#tests)
 - [Developer](#developer)
 
-
 ## Technologies
 
 - Gson
