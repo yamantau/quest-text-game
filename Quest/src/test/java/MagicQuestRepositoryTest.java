@@ -17,6 +17,9 @@ public class MagicQuestRepositoryTest {
     @Disabled
     public void createNewAnswerTest(){
 
+        //Не успел придумать решение этого, выдает ошибку, не совсем понимаю, как работать с файлами,
+        //надо создать доп файл дб в ресурсах теста?
+
         Variant firstMockitoVariant = Mockito.mock(Variant.class);
         Variant secondMockitoVariant = Mockito.mock(Variant.class);
 //        Mockito.doReturn(1).when(mockitoVariant).getId();
