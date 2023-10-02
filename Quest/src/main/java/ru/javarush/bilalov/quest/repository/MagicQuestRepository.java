@@ -6,17 +6,15 @@ import com.google.gson.reflect.TypeToken;
 import ru.javarush.bilalov.quest.entity.Answer;
 import ru.javarush.bilalov.quest.entity.Variant;
 
-import javax.servlet.http.HttpSession;
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Scanner;
 
-public class LifeQuestRepository implements Repository{
+public class MagicQuestRepository implements Repository{
 
-    String pathToDb = getClass().getResource("/").getPath() + "DataBase.json";
+    private String pathToDb = getClass().getResource("/").getPath() + "DataBase.json";
 
     @Override
     public void createNewAnswer(int id, String description, String text, List<Variant> variants) {

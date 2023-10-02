@@ -1,6 +1,6 @@
 package ru.javarush.bilalov.quest.service;
 
-import ru.javarush.bilalov.quest.repository.LifeQuestRepository;
+import ru.javarush.bilalov.quest.repository.MagicQuestRepository;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,7 +19,7 @@ public class LogicServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        LifeQuestRepository lifeQuestRepository = new LifeQuestRepository();
+        MagicQuestRepository magicQuestRepository = new MagicQuestRepository();
         int id = Integer.parseInt(req.getParameter("value"));
         HttpSession session = req.getSession(true);
 
@@ -40,7 +40,7 @@ public class LogicServlet extends HttpServlet {
         if (!allAnswers.contains(id))
             allAnswers.add(id);
 
-        if ("Финал".equals(lifeQuestRepository.getAnswerById(id).getDescription())){
+        if ("Финал".equals(magicQuestRepository.getAnswerById(id).getDescription())){
             int endGames = Integer.parseInt(session.getAttribute("endGames").toString());
             session.setAttribute("endGames", ++endGames);
         }
@@ -50,7 +50,7 @@ public class LogicServlet extends HttpServlet {
 
         resp.setContentType("text/html;charset=UTF-8");
         PrintWriter out = resp.getWriter();
-        out.println(lifeQuestRepository.getGsonAnswerById(id));
+        out.println(magicQuestRepository.getGsonAnswerById(id));
     }
 
 }
