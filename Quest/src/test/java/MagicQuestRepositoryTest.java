@@ -6,7 +6,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import ru.javarush.bilalov.quest.entity.Variant;
 import ru.javarush.bilalov.quest.repository.MagicQuestRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @ExtendWith(MockitoExtension.class)
@@ -16,7 +15,6 @@ public class MagicQuestRepositoryTest {
     @Test
     @Disabled
     public void createNewAnswerTest(){
-
         //Не успел придумать решение этого, выдает ошибку, не совсем понимаю, как работать с файлами,
         //надо создать доп файл дб в ресурсах теста?
 
