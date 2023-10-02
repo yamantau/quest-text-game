@@ -125,22 +125,11 @@
         vertical-align: top;
         transition: box-shadow 0.2s;
     }
-    .variants > *:focus-visible {
-        border: 1px solid #4c51f9;
-        outline: none;
-    }
+
     .variants > *:hover {
         transition: all 0.2s;
+        background-color: #d2d2d2;
         box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
-    }
-    .variants > *:active {
-        background-color: #808080;
-    }
-    .variants > *:disabled {
-        background-color: #eee;
-        border-color: #eee;
-        color: #444;
-        cursor: not-allowed;
     }
 
 </style>
